@@ -1,20 +1,32 @@
-const d = document
-const name = d.querySelector('#name')
-const status = d.querySelector('#status')
-const species = d.querySelector('#species')
-const gender = d.querySelector('#gender')
-const image = d.querySelector('#image')
-const addCharacter = d.querySelector('#add-character-form')
-const add = d.add('#add')
+
+const name = document.querySelector('#name')
+const status = document.querySelector('#status')
+const species = document.querySelector('#species')
+const gender = document.querySelector('#gender')
+const image = document.querySelector('#image')
+const addCharacter = document.querySelector('#add-character-form')
+const add = document.querySelector('#add')
 
 add.addEventListener('click', function(e){
     e.preventDefault()
-
+   
     const character = {}
     character.name = name.value;
     character.status = status.value;
     character.species = species.value;
     character.gender = gender.value;
     character.image = image.value;
-    console.log(character);
+
+     
+    fetch('http://localhost:5000/api/characters',{
+        method: 'POST',
+        body: JSON.stringify(character),
+        header:{
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+        }
+    })
+    .then(res => res.json())
+    .catch(error => console.error('Error:', error))
+    .then(response => console.log('Success:', response));
 })
