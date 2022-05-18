@@ -13,12 +13,6 @@ add.addEventListener('click', (e) => {
     e.preventDefault()
     console.log(e);
 
-remove.addEventListener('click', (e) => {
-    e.preventDefault()
-    console.log(e);
-})
-
-
     const character = {}
     character.name = name.value;
     character.status = status.value;
@@ -47,7 +41,7 @@ fetch(url)
 .then((res) => res.json())
 .then(data => {
     data.forEach(item => lista.innerHTML += `<li>${item.name}</li>
-    <button>Edits</button>
+    <button>Edit</button>
     <button  data-id="${item._id}" class="remove">Delete</button>`)
     const deleteBtn = d.getElementsByClassName('remove')
     const buttons = Array.from(deleteBtn)
