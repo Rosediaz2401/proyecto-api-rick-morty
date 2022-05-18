@@ -9,8 +9,23 @@ const uri = "mongodb+srv://proyecto:proyecto@cluster0.vssns.mongodb.net/?retryWr
 const app = express();
 const port = process.env.PORT || 5000;
 const userRoutes = require("./routes/character")
+const cors = require('cors')
 
 //middleware
+
+app.options('*', cors());
+
+    app.all('*', function(req, res, next) {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Headers',
+            'X-Requested-With, Content-Type, Accept');
+        res.header('Access-Control-Allow-Methods',
+            'GET, POST, PUT, DELETE, OPTIONS');
+
+        next();
+
+    });
+
 app.use(express.json());
 app.use('/api',userRoutes)
 

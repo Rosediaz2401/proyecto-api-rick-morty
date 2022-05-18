@@ -3,6 +3,7 @@ const characterSchema = require("../models/characters")
 
 const router = express.Router();
 
+
 // create character
 
 router.post('/characters', (req,res) => {

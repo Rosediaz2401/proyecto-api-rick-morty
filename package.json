@@ -1,7 +1,6 @@
 {
   "name": "proyecto",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,11 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosediaz2401/proyecto-api-rick-morty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rosediaz2401/proyecto-api-rick-morty/issues"
+  },
+  "homepage": "https://github.com/Rosediaz2401/proyecto-api-rick-morty#readme",
+  "description": ""
 }

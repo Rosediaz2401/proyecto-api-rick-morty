@@ -29,4 +29,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5000/api/characters/628424de0a16c31a343b83f1 HTTP/1.1
+DELETE http://localhost:5000/api/characters/62842a7030da727ca6516383 HTTP/1.1
