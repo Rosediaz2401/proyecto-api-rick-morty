@@ -10,7 +10,6 @@ const app = express();
 const port = process.env.PORT || 5000;
 const userRoutes = require("./routes/character")
 const cors = require('cors')
-//const bodyParser = require("body-parser")
 
 
 //middleware
@@ -30,7 +29,6 @@ app.options('*', cors());
 
 app.use(express.json());
 app.use('/api',userRoutes)
-//app.use(bodyParser.urlencoded({ extended: true }));
 
 // routes
 
