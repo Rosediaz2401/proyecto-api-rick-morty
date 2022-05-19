@@ -3,10 +3,10 @@ POST http://localhost:5000/api/characters HTTP/1.1
 Content-Type: application/json
 
 {
-    "name":"Jesus - edited version",
-    "status": "Alive",
-    "species": "Human",
-    "gender": "Male",
+    "name":"Editar",
+    "status": "Editar",
+    "species": "Editar",
+    "gender": "Editar",
     "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg"
 }
 
@@ -14,17 +14,17 @@ Content-Type: application/json
 GET http://localhost:5000/api/characters HTTP/1.1
 
 ###
-GET http://localhost:5000/api/characters/62842a7030da727ca6516383 HTTP/1.1
+GET http://localhost:5000/api/characters/6286a42ab933fb8abb8859dc HTTP/1.1
 
 ###
-PUT http://localhost:5000/api/characters/62842a7030da727ca6516383 HTTP/1.1
+PUT http://localhost:5000/api/characters/6286a42ab933fb8abb8859dc HTTP/1.1
 Content-Type: application/json
 
 {
-    "name":"Perfil editado",
-    "status": "Unknown",
-    "species": "Human",
-    "gender": "Male",
+    "name":"Prueba editar",
+    "status": "Prueba editar",
+    "species": "Prueba editar",
+    "gender": "Prueba editar",
     "image": ""
 }
 

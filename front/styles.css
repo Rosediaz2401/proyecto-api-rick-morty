@@ -7,6 +7,7 @@ body {
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
     color: white;
+
   }
   header h1{
     font-size: 49px;
@@ -15,11 +16,36 @@ body {
     margin-bottom: 30px;
     border-radius: 20%;
   }
+  .to-do{
+    margin-bottom: 10px;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #047;
+    color: white;
+    border: none;
+    box-shadow: rgb(171 205 77 / 7%) 0px 1px 1px, rgb(171 205 77 / 7%) 0px 2px 2px, rgb(171 205 77 / 7%) 0px 4px 4px, rgb(171 205 77 / 7%) 0px 8px 8px, rgb(171 205 77 / 7%) 0px 16px 16px;
+  }
+  .btns{
+    margin: 30px 10px 30px 10px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: #abcd4d;
+    color: #047;
+    box-shadow: rgb(0 68 119 / 48%) 6px 2px 16px 0px, rgb(0 68 119 / 80%) -6px -2px 16px 0px;
+    cursor: pointer;
+    border: none;
+  }
   
   .a-box {
     display: inline-block;
     width: 240px;
     text-align: center;
+    margin: 20px;
+    border-radius: 12px;
+    padding: 10px;
   }
   
   .img-container {
@@ -31,11 +57,15 @@ body {
   }
   
   .img-container img {
-      transform: skew(0deg, -13deg);
-      height: 250px;
-      margin: -35px 0px 0px -70px;
+    transform: skew(0deg, -13deg);
+    height: 219px;
+    margin: -20px 0px 0px -5px;
   }
-  
+
+    .img-container:hover{
+    transform: translateY(-25px);
+  }
+
   .inner-skew {
       display: inline-block;
       border-radius: 20px;
@@ -50,44 +80,33 @@ body {
   }
   
   .text-container {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    padding: 25px 20px 20px 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,68,119,1);
+    padding: 20px;
     border-radius: 20px;
-    background: #047
+    background: #047;
+    padding: 120px 20px 20px 20px;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
   }
   .main-container{
-    margin: 0px 20px 0px -25px;
+    margin: auto;
+    padding: 0px
   }
   .list-items{
       list-style: none;
+      margin-bottom: 5px;
+      line-height: 1.5;
   }
   .name{
     display: flex;
     font-weight: bold;
     font-size: 35px;
-    height: 120px;
+    height: 115px;
     justify-content: center;
     align-items: center;
+    line-height: 1.1;
   }
-  .to-do{
-    margin-bottom: 10px;
-    padding: 16px;
-    border-radius: 5%;
-    background-color: #047;
-    color: white;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  }
-  .btns{
-    margin: 30px 0px 30px 0px;
-    font-weight: bold;
-    border: none;
-    padding: 10px;
-    border-radius: 5%;
-    background-color: #abcd4d;
-    color: #047;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  }
+  
 
   @media only screen and (min-width: 480px){
     
