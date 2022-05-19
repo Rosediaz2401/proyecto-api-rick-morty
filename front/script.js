@@ -59,7 +59,7 @@ fetch(url)
         </div>
     <li class="list-items name">${item.name}</li>
     <button class="btns">Edit</button>
-    <button class="btns" data-id="${item._id}" class="remove">Delete</button>`)
+    <button class="remove btns" data-id="${item._id}">Delete</button>`)
     const deleteBtn = d.getElementsByClassName('remove')
     const buttons = Array.from(deleteBtn)
     buttons.forEach((btn => {
