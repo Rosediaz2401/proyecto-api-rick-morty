@@ -37,7 +37,7 @@ if(add){
         })
         .then(res => res.json())
         .catch(error => console.error('Error:', error))
-        .then(response => console.log('Success:', response));
+        .then(response => window.location.reload());
     }
     sendData()
     })
@@ -56,7 +56,7 @@ if(isIndex){
                 <div class="img-container">
                   <div class="img-inner">
                     <div class="inner-skew" id="rick">
-                    <img src= ${item.image}>
+                    <img src= ${checkIfJPEG(item.image)}>
                     </div>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ if(id){
         <div class="img-container">
           <div class="img-inner">
             <div class="inner-skew" id="rick">
-            <img src=${item.image}>
+            <img src=${checkIfJPEG(item.image)}>
             </div>
           </div>
         </div>
@@ -169,8 +169,25 @@ if(id){
             // const urlImg = 'https://rickandmortyapi.com/api/character/avatar/19.jpeg'
             // if(image === ' '){
             // console.log('vacio');
+            
             // }else{
             // return(urlImg);
             // }
             // }
             // noImageAdded()
+
+            function checkIfJPEG (image) {
+                const urlImg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5x5Ac3B7lSh8t5H9foHldZLxiMaOL7BVsDo4K3k7j1eg5_7CCObJcSJyg752UL_qAjs&usqp=CAU'
+
+                // if(image.includes('jpeg')){
+                //     const noImage = image.split('avatar')[1].split('.')[1] === 'jpeg'
+                //     return image
+                // }else{
+                //     return urlImg
+                // }
+                console.log(image.includes('.jpeg'));
+                return image.includes('jpeg') ||  image.includes('png') || image.includes('jpg') ? image : urlImg
+                
+            }
+
+            
