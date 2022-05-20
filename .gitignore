@@ -1,1 +1,4 @@
 .env
+/node_modules
+/nueva-carpeta
+front/*.txt
