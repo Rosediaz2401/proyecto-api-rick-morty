@@ -16,3 +16,9 @@
     // <button class="remove btns" data-id="${item._id}">Delete</button>)`
 
     // let container = container.append(template) -->
+    <!-- // if(image.includes('jpeg')){
+      //     const noImage = image.split('avatar')[1].split('.')[1] === 'jpeg'
+      //     return image
+      // }else{
+      //     return urlImg
+      // } -->
