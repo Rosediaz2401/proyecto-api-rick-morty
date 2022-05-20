@@ -1,8 +1,9 @@
 const { json } = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
-require('dotenv').config();
-const uri = "mongodb+srv://proyecto:proyecto@cluster0.vssns.mongodb.net/?retryWrites=true&w=majority";
+require('dotenv').config({path: __dirname + "/.env"});
+const uri = process.env.PROYECTO_URI;
+//const uri = "mongodb+srv://proyecto:proyecto@cluster0.vssns.mongodb.net/?retryWrites=true&w=majority";
 //const url = "mongodb://0.0.0.0:27017/proyecto"
 //const source = process.env.PROYECTO_URL;
 

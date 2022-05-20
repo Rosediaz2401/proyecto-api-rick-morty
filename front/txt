@@ -1,0 +1,18 @@
+ <!-- //     let template = `<div class="a-box">
+    //     <div class="img-container">
+    //       <div class="img-inner">
+    //         <div class="inner-skew" id="rick">
+    //         <img src= ${checkIfJPEG(item.image)}>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     <div class="text-container" id="name">
+    //     <li class="list-items name">${item.name}</li>
+    //     <li class="list-items"> ${item.status}</li>
+    //     <li class="list-items"> ${item.species}</li>
+    //     <li class="list-items">${item.gender}</li> 
+    //     </div>
+    // <button class=" edit btns"  data-id="${item._id}">Edit</button>
+    // <button class="remove btns" data-id="${item._id}">Delete</button>)`
+
+    // let container = container.append(template) -->
